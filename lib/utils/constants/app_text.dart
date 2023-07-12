@@ -19,4 +19,20 @@ class AppTextStyles {
     letterSpacing: 2,
     fontFamily: 'Inter',
   );
+
+  static const TextStyle onboardingTextBtn = TextStyle(
+    fontSize: 28,
+    color: AppColors.white,
+    fontWeight: FontWeight.w900,
+    letterSpacing: 2,
+    fontFamily: 'Inter',
+  );
+
+  static const TextStyle smalTextOnboarding = TextStyle(
+    fontSize: 16,
+    color: AppColors.onboardingButtonColor,
+    fontWeight: FontWeight.w500,
+    letterSpacing: 2,
+    fontFamily: 'Inter',
+  );
 }

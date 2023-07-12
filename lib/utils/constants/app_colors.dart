@@ -12,4 +12,5 @@ class AppColors {
   static const Color white = Color(0xFFFFFFFF);
   static const Color colorOnboarding = Color(0xFFEEF8F7);
   static const Color onboardingTextColor = Color(0xFF3E7C78);
+  static const Color onboardingButtonColor = Color(0xFF444444);
 }
