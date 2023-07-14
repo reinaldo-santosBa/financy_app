@@ -1,5 +1,6 @@
 import 'package:financy_app/utils/constants/app_colors.dart';
 import 'package:financy_app/utils/constants/app_text.dart';
+import 'package:financy_app/widgetsCustom/btnPrimary.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingPage extends StatefulWidget {
@@ -40,27 +41,29 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
               'Save more',
               style: AppTextStyles.onboardingText,
             ),
-            Container(
-              alignment: Alignment.center,
-              height: 56.0,
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: AppColors.splashGradient,
-                ),
+            const SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 24.0,
+                right: 24.0,
               ),
-              child: const Text(
-                'Get started',
-                style: AppTextStyles.onboardingTextBtn,
+              child: BtnPrimary(
+                text: 'Get Started',
+                // ignore: avoid_print
+                onPressed: () => print(123),
               ),
+            ),
+            const SizedBox(
+              height: 20,
             ),
             const Text(
               'Already have account? Log In',
               style: AppTextStyles.smalTextOnboarding,
             ),
             const SizedBox(
-              height: 30,
+              height: 10,
             ),
           ],
         ),

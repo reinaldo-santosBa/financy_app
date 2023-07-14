@@ -21,7 +21,7 @@ class AppTextStyles {
   );
 
   static const TextStyle onboardingTextBtn = TextStyle(
-    fontSize: 28,
+    fontSize: 24,
     color: AppColors.white,
     fontWeight: FontWeight.w900,
     letterSpacing: 2,
@@ -29,9 +29,9 @@ class AppTextStyles {
   );
 
   static const TextStyle smalTextOnboarding = TextStyle(
-    fontSize: 16,
+    fontSize: 18,
     color: AppColors.onboardingButtonColor,
-    fontWeight: FontWeight.w500,
+    fontWeight: FontWeight.w400,
     letterSpacing: 2,
     fontFamily: 'Inter',
   );
