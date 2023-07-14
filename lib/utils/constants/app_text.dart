@@ -35,4 +35,12 @@ class AppTextStyles {
     letterSpacing: 2,
     fontFamily: 'Inter',
   );
+
+  static const TextStyle smalTextOnboardingColoreded = TextStyle(
+    fontSize: 18,
+    color: AppColors.greenLightOne,
+    fontWeight: FontWeight.w400,
+    letterSpacing: 2,
+    fontFamily: 'Inter',
+  );
 }

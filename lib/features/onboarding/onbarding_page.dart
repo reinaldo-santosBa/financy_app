@@ -1,6 +1,6 @@
-import 'package:financy_app/utils/constants/app_colors.dart';
 import 'package:financy_app/utils/constants/app_text.dart';
-import 'package:financy_app/widgetsCustom/btnPrimary.dart';
+import 'package:financy_app/widgetsCustom/btn_primary.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingPage extends StatefulWidget {
@@ -23,7 +23,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             Expanded(
               flex: 2,
               child: Container(
-                color: const Color(0xFFEEF8F7),
+                color: const Color(0xFFFFFFFF),
                 child: Image.asset(
                   'assets/images/man.png',
                   fit: BoxFit.fitHeight,
@@ -58,9 +58,21 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
             const SizedBox(
               height: 20,
             ),
-            const Text(
-              'Already have account? Log In',
-              style: AppTextStyles.smalTextOnboarding,
+            RichText(
+              text: TextSpan(
+                children: [
+                  const TextSpan(
+                    text: 'Already have account',
+                    style: AppTextStyles.smalTextOnboarding,
+                  ),
+                  TextSpan(
+                    text: ' Sign Up!',
+                    style: AppTextStyles.smalTextOnboardingColoreded,
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () => print('func'),
+                  ),
+                ],
+              ),
             ),
             const SizedBox(
               height: 10,
